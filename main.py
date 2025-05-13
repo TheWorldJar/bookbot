@@ -13,7 +13,7 @@ def print_char_count(char_count):
     print("--------- Character Count -------")
     for entry in char_count:
         if entry["char"].isalpha():
-            print(f"'{entry["char"]}': {entry["num"]}")
+            print(f"{entry["char"]}: {entry["num"]}")
 
 def main():
     print("============ BOOKBOT ============")
@@ -21,7 +21,7 @@ def main():
 
     book_text = get_book_text("books/frankenstein.txt")
     wordcount = get_word_count(book_text)
-    
+
     print_word_count(wordcount)
 
     char_count = get_char_count(book_text)
